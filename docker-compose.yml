@@ -10,14 +10,4 @@ services:
     volumes:
       - .:/usr/src/app
 
-  mysql:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: 'test_pass' # TODO: Change this
-      MYSQL_USER: 'user'
-      MYSQL_PASS: 'pass'
-    volumes:
-      - my-volume:/var/lib/mysql
-volumes:
-  my-volume:
     
